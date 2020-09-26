@@ -17,5 +17,6 @@ public class PrintTri {
             }
             System.out.println("");
         }
+        scanner.close();
     }
 }

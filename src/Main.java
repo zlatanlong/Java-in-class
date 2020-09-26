@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -8,8 +10,10 @@ public class Main {
         String hello = "";
         Scanner scanner = new Scanner(System.in);
 //        hello = scanner.nextLine();
-        System.out.println(a == b);
-        System.out.println(hello);
+        // System.out.println(a == b);
+        // System.out.println(hello);
+        System.getProperties().list(System.out);
+        System.out.println(System.getProperty("java.library.path"));
         scanner.close();
     }
 }
