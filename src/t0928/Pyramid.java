@@ -17,7 +17,7 @@ public class Pyramid {
                 System.out.print("\t");
             }
             for (int j = i; j >= 1; j--) {
-                System.out.print(j+"\t");
+                System.out.print(j+10);
             }
             for (int j = 2; j <= i-1; j++) {
                 System.out.print(j+"\t");
