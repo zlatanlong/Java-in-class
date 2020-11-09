@@ -112,5 +112,6 @@ public class Game {
             }
             game.resetGame();
         }
+        scanner.close();
     }
 }

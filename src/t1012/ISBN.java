@@ -36,5 +36,6 @@ public class ISBN {
                 System.out.println("Incorrect input format!");
             }
         }
+        scanner.close();
     }
 }

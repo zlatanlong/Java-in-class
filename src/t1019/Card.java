@@ -96,6 +96,7 @@ public class Card {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入您的id卡号:");
         System.out.println("判断结果" + Card.isValid(scanner.nextLong()));
+        scanner.close();
 
     }
 }

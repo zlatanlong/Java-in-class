@@ -50,7 +50,7 @@ public class Pyramid {
 //        new Pyramid().printPyramid(count);
         double a = Math.pow(2, 63);
         double c = Math.pow(2, 1);
-        Double b = new Double(a);
+        Double b = Double.valueOf(a);
         System.out.println(Long.toBinaryString(Double.doubleToRawLongBits(b)));
         System.out.println(Long.toBinaryString(Double.doubleToLongBits(c)));
         System.out.println(Double.toHexString(a-1));

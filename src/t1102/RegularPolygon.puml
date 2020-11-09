@@ -1,0 +1,25 @@
+@startuml
+
+class RegularPolygon {
+  - int n
+  - double side
+  - double x
+  - double y
+  ..Constructor..
+  + RegularPolygon()
+  + RegularPolygon(int n, double side)
+  + RegularPolygon(int n, double side, double x, double y)
+  ..Getter & Setter..
+  + double getSide()
+  + double getX()
+  + double getY()
+  + int getN()
+  + void setN(int n)
+  + void setSide(double side)
+  + void setX(double x)
+  + void setY(double y)
+  ..method..
+  + double getPerimeter()
+  + double getArea()
+}
+@enduml

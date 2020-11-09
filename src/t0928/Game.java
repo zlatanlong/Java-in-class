@@ -61,6 +61,7 @@ public class Game {
                 break;
             }
         }
+        scanner.close();
 
     }
 
