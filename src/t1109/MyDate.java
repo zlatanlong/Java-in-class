@@ -17,14 +17,7 @@ public class MyDate {
     private int s;
 
     public MyDate() {
-        Date date = new Date();
-        String[] strNow1 = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(date).toString().split("-");
-        year = Integer.parseInt(strNow1[0]);
-        month = Integer.parseInt(strNow1[1]) - 1;
-        day = Integer.parseInt(strNow1[2]);
-        h = Integer.parseInt(strNow1[3]);
-        m = Integer.parseInt(strNow1[4]);
-        s = Integer.parseInt(strNow1[5]);
+        this(System.currentTimeMillis());
     }
 
     public MyDate(long elapsedTime) {
