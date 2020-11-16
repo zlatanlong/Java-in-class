@@ -63,14 +63,14 @@ public class NewAccount extends Account {
         account.deposit(40);
         account.deposit(50);
         account.withDraw(5);
-        account.deposit(4);
-        account.deposit(2);
+        account.withDraw(4);
+        account.withDraw(2);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String f1 = sdf.format(account.getDateCreated());
         System.out.println("开户日期: " + f1);
         System.out.println("开户人: " + account.getName());
         System.out.println("余额： " + account.getBalance());
-        System.out.println("月利息： " + 100 * account.getAnnualInterestRate() / 12 + "%");
+        System.out.println("月利息： " + account.getMonthlyInterest());
 
         account.getTransactions().forEach(
                 transaction -> {

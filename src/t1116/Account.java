@@ -12,7 +12,7 @@ public class Account {
     private int id;
     protected double balance;
     private double annualInterestRate;
-    private final Date dateCreated= new Date();
+    private final Date dateCreated = new Date();
 
     public Account() {
     }
@@ -87,7 +87,7 @@ public class Account {
         System.out.println("开户日期: "+format);
 
         System.out.println("余额： "+ account.getBalance());
-        System.out.println("月利息： "+ 100*account.getAnnualInterestRate() /12 + "%");
+        System.out.println("月利息： "+ account.getMonthlyInterest());
 
     }
 }
