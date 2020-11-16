@@ -1,0 +1,15 @@
+@startuml
+class Account {
+  - int id
+  # double balance
+  - double annualInterestRate
+  - final Date dateCreated
+  ..Constructor..
+  + Account()
+  + Account(int id, double balance)
+  ..Getter & Setter..
+  ..method..
+  + boolean withDraw(double d)
+  + boolean deposit(double d)
+}
+@enduml
