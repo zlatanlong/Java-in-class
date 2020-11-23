@@ -32,7 +32,7 @@ public class Student {
         Student[] students = new Student[count];
 
         for (int i = 0; i < count; i++) {
-            students[i] = new Student((int) (Math.random() * (max - min) + min));
+            students[i] = new Student((int) (Math.random() * (max + 1 - min) + min));
         }
 
         int sum = 0, errSum = 0, noErrCount = 0;
@@ -53,7 +53,7 @@ public class Student {
 
         System.out.println("---------统计完毕----------");
         System.out.println("正常人数: " + noErrCount + "; 平均分: " + sum / noErrCount);
-        System.out.println("异常人数: " + (count - noErrCount) + "; 平均分: " + errSum / noErrCount);
+        System.out.println("异常人数: " + (count - noErrCount) + "; 平均分: " + errSum / (count - noErrCount));
 
     }
 }
